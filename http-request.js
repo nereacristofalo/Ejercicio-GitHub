@@ -4,17 +4,17 @@ export const getRepos = async (user) => {
   return await (
     await fetch(`https://api.github.com/users/${user}/repos`, {
       headers: {
-        Authorization: 'Bearer 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',
+        Authorization: 'Bearer ',
       },
     })
   ).json();
 };
 
-export const getCommits = async (url) => {
+export const getData = async (url) => {
   return await (
     await fetch(url, {
       headers: {
-        Authorization: 'Bearer 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',
+        Authorization: 'Bearer ',
       },
     })
   ).json();
